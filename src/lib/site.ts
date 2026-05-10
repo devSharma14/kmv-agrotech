@@ -1,10 +1,10 @@
 export const site = {
   name: "KMV Agrotech & Engineering Works",
   short: "KMV Agrotech",
-  tagline: "Field-grade instruments for India's hydrology, weather and survey teams.",
+  tagline: "Lab equipment for schools, colleges, research labs and companies.",
   description:
-    "ISO 9001:2015 certified distributor of hydrological, meteorological, agricultural research, scientific, survey and geotechnical instruments. Serving government agencies, research institutions and infrastructure projects across India since 1998.",
-  founded: 1998,
+    "We sell microscopes, weighing scales, lab tools and biotech machines to labs all over India. ISO 9001:2015 certified and MSME registered.",
+  founded: 2017,
   address: {
     line1: "353, Poorva Deen Dayal",
     line2: "Old Railway Road, Roorkee",

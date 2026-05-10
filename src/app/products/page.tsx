@@ -9,11 +9,12 @@ import { Crumbs } from "@/components/Crumbs";
 import { Reveal } from "@/components/Reveal";
 import { SectionLabel } from "@/components/SectionLabel";
 import { CatalogueButton } from "@/components/CatalogueButton";
+import { LogoTile } from "@/components/LogoTile";
 
 export const metadata: Metadata = {
   title: "Products",
   description:
-    "The full KMV Agrotech catalogue: hydrology, meteorology, agricultural research, scientific & survey, and geological & geotechnical instruments.",
+    "Browse the KMV Agrotech catalogue — microscopes, weighing balances, laboratory instruments and biotech equipment.",
 };
 
 export default function ProductsIndex() {
@@ -21,8 +22,8 @@ export default function ProductsIndex() {
     <>
       <PageHeader
         eyebrow="Products"
-        title="Field-grade instruments, organised for procurement."
-        description={`A curated portfolio of ${products.length}+ instruments from ${brands.length}+ international manufacturers, across five disciplines.`}
+        title="Everything we sell, in one place."
+        description={`${products.length}+ products, sorted into 4 simple categories. Pick a category below to see what's inside.`}
         meta={
           <div className="flex flex-col gap-5">
             <Crumbs items={[{ label: "Home", href: "/" }, { label: "Products" }]} />
@@ -36,11 +37,11 @@ export default function ProductsIndex() {
       {/* Categories */}
       <section className="py-section bg-white">
         <div className="container-x">
-          <SectionLabel className="mb-4">By discipline</SectionLabel>
+          <SectionLabel className="mb-4">Categories</SectionLabel>
           <h2 className="section-heading mb-12 max-w-3xl">
-            Five disciplines. Pick a category to start.
+            Tap any category to see its products.
           </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {categories.map((c, i) => (
               <Reveal key={c.slug} delay={i * 0.05}>
                 <CategoryCard category={c} />
@@ -55,12 +56,12 @@ export default function ProductsIndex() {
         <div className="container-x">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
             <div>
-              <SectionLabel className="mb-4">Complete catalogue</SectionLabel>
-              <h2 className="section-heading">All {products.length} instruments.</h2>
+              <SectionLabel className="mb-4">All products</SectionLabel>
+              <h2 className="section-heading">All {products.length} products.</h2>
             </div>
             <p className="md:max-w-md text-sm text-slate-600 leading-relaxed">
-              Need something not listed here? Our team can source it from one of our 24+ partner
-              manufacturers — usually within two working days.
+              Can't find what you need? Just tell us — we work with {brands.length}+ brands
+              and can usually get it in a day or two.
             </p>
           </div>
 
@@ -77,18 +78,19 @@ export default function ProductsIndex() {
       {/* Partner brands */}
       <section className="py-section bg-white">
         <div className="container-x">
-          <SectionLabel className="mb-4">Partner brands</SectionLabel>
+          <SectionLabel className="mb-4">Brands we sell</SectionLabel>
           <h2 className="section-heading max-w-3xl mb-12">
-            Authorised distributor for {brands.length}+ international manufacturers.
+            We are official sellers for {brands.length}+ brands.
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-px bg-slate-200 border border-slate-200 rounded-md overflow-hidden">
+          <div className="flex flex-wrap justify-center gap-3 md:gap-4">
             {brands.map((b) => (
-              <div
-                key={b}
-                className="bg-white px-4 py-7 flex items-center justify-center text-center font-display text-sm font-bold text-ink hover:bg-brand-50 hover:text-brand transition-colors"
-              >
-                {b}
-              </div>
+              <LogoTile
+                key={b.name}
+                name={b.name}
+                src={b.logo}
+                variant="light"
+                className="h-20 w-36 md:h-24 md:w-44 rounded-md border border-slate-200 bg-white shadow-sm hover:shadow-card-hover hover:border-brand/30 hover:-translate-y-0.5 transition-all duration-200"
+              />
             ))}
           </div>
         </div>

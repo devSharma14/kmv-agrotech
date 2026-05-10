@@ -173,9 +173,8 @@ export default function ProductDetail({ params }: { params: { category: string; 
                   {product.name}
                 </div>
                 <p className="mt-3 text-sm text-white/75 leading-relaxed">
-                  KMV Agrotech is the supplier — we represent multiple international brands.
-                  Send a quote request and our team will respond within one working day with
-                  pricing, lead time and supported variants.
+                  We sell this product. Ask for a quote and we will reply with the price
+                  and delivery time within one working day.
                 </p>
 
                 <div className="mt-6 flex flex-col gap-2.5">
@@ -230,11 +229,11 @@ export default function ProductDetail({ params }: { params: { category: string; 
                   Why buy from KMV
                 </div>
                 <ul className="space-y-2.5 text-sm text-slate-700">
-                  <li className="flex gap-2"><Check className="h-4 w-4 text-brand shrink-0 mt-0.5" /> Authorised multi-brand distributor</li>
-                  <li className="flex gap-2"><Check className="h-4 w-4 text-brand shrink-0 mt-0.5" /> Commissioning + operator training</li>
-                  <li className="flex gap-2"><Check className="h-4 w-4 text-brand shrink-0 mt-0.5" /> NABL-traceable calibration</li>
-                  <li className="flex gap-2"><Check className="h-4 w-4 text-brand shrink-0 mt-0.5" /> 24-hour service response</li>
-                  <li className="flex gap-2"><Check className="h-4 w-4 text-brand shrink-0 mt-0.5" /> GeM-listed (Seller ID 73AF180000516029)</li>
+                  <li className="flex gap-2"><Check className="h-4 w-4 text-brand shrink-0 mt-0.5" /> Official seller for top brands</li>
+                  <li className="flex gap-2"><Check className="h-4 w-4 text-brand shrink-0 mt-0.5" /> We set it up and train your team</li>
+                  <li className="flex gap-2"><Check className="h-4 w-4 text-brand shrink-0 mt-0.5" /> Calibration papers in the box</li>
+                  <li className="flex gap-2"><Check className="h-4 w-4 text-brand shrink-0 mt-0.5" /> Quick service if anything breaks</li>
+                  <li className="flex gap-2"><Check className="h-4 w-4 text-brand shrink-0 mt-0.5" /> Listed on GeM portal</li>
                 </ul>
               </div>
             </div>

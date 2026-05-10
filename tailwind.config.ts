@@ -22,10 +22,10 @@ const config: Config = {
           900: "#04162A",
         },
         accent: {
-          DEFAULT: "#E2761B",
-          dark: "#C2410C",
-          soft: "#F59E4B",
-          50: "#FEF4EB",
+          DEFAULT: "#10B981",
+          dark: "#059669",
+          soft: "#34D399",
+          50: "#ECFDF5",
         },
         ink: {
           DEFAULT: "#1A2332",

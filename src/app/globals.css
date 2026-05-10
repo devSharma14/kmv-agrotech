@@ -9,8 +9,8 @@
   --color-brand-50: #f0f5fb;
   --color-brand-100: #dce7f4;
 
-  --color-accent: #e2761b;
-  --color-accent-dark: #c2410c;
+  --color-accent: #10b981;
+  --color-accent-dark: #059669;
 
   --color-ink: #1a2332;
   --color-slate-100: #f1f5f9;
@@ -169,7 +169,7 @@ body {
 .hero-bg {
   background:
     radial-gradient(ellipse 60% 50% at 95% 0%, rgba(11, 59, 111, 0.18), transparent 65%),
-    radial-gradient(ellipse 50% 40% at 0% 100%, rgba(226, 118, 27, 0.08), transparent 70%),
+    radial-gradient(ellipse 50% 40% at 0% 100%, rgba(16, 185, 129, 0.10), transparent 70%),
     linear-gradient(180deg, #F0F5FB 0%, #FFFFFF 75%);
 }
 
@@ -180,7 +180,7 @@ body {
     linear-gradient(180deg, #06203D 0%, #082B52 100%);
 }
 
-/* Diagonal navy panel for hero schematic backdrop */
+/* Diagonal navy panel with green undertone for hero schematic backdrop */
 .panel-tilt-bg {
   background: linear-gradient(135deg, #0B3B6F 0%, #14528E 100%);
   position: relative;

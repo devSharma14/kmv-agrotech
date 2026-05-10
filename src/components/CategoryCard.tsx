@@ -5,11 +5,10 @@ import type { Category } from "@/data/categories";
 
 // Lead image to feature for each category
 const CATEGORY_HERO: Record<string, { src: string; alt: string }> = {
-  hydrological: { src: "/products/laboratory/bod.jpg", alt: "BOD Apparatus" },
-  meteorological: { src: "/products/laboratory/wet-dry-bulb.jpg", alt: "Wet & Dry Bulb Hygrometer" },
-  agricultural: { src: "/products/biotech/plant-growth-chamber.jpg", alt: "Plant Growth Chamber" },
-  scientific: { src: "/products/balances/analytical-balance.jpg", alt: "Analytical Balance" },
-  geological: { src: "/products/microscopes/research.jpg", alt: "Research Microscope" },
+  microscopes: { src: "/products/microscopes/research.jpg", alt: "Research Microscope" },
+  balances: { src: "/products/balances/analytical-balance.jpg", alt: "Analytical Balance" },
+  laboratory: { src: "/products/laboratory/spectrophotometers-uv-vis.jpg", alt: "UV-Vis Spectrophotometer" },
+  biotech: { src: "/products/biotech/plant-growth-chamber.jpg", alt: "Plant Growth Chamber" },
 };
 
 export function CategoryCard({ category }: { category: Category }) {
@@ -41,7 +40,7 @@ export function CategoryCard({ category }: { category: Category }) {
         <div className="absolute top-0 inset-x-0 h-1" style={{ backgroundColor: category.color }} aria-hidden />
         <div className="absolute top-3 left-3 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-sm bg-white border border-slate-200 text-xs font-semibold text-ink shadow-sm">
           <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: category.color }} />
-          {category.number} <span className="text-slate-400">/ 05</span>
+          {category.number} <span className="text-slate-400">/ 04</span>
         </div>
       </div>
 

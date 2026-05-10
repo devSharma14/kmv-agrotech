@@ -1,7 +1,7 @@
 /**
- * KMV Agrotech mark — black gear ring, white interior, red "KMV" wordmark.
- * Use `className="h-10 w-10"` (or similar) to size; colours are fixed
- * so the brand mark is consistent regardless of surrounding theme.
+ * KMV Agrotech mark — black gear ring with subtle green inner highlight,
+ * white interior and green "KMV" wordmark. Use `className="h-10 w-10"`
+ * (or similar) to size; colours are fixed so the mark is consistent.
  */
 export function Logo({ className, withMark = false }: { className?: string; withMark?: boolean }) {
   const teethCount = 22;
@@ -38,8 +38,8 @@ export function Logo({ className, withMark = false }: { className?: string; with
       {/* Outer gear ring */}
       <circle cx="55" cy="55" r="46" fill="#161616" />
 
-      {/* Inner ring divider (subtle highlight just inside the dark band) */}
-      <circle cx="55" cy="55" r="42" fill="none" stroke="#3A3A3A" strokeWidth="0.5" />
+      {/* Inner ring divider (subtle green highlight just inside the dark band) */}
+      <circle cx="55" cy="55" r="42" fill="none" stroke="#10B981" strokeWidth="0.5" />
 
       {/* White inner disc */}
       <circle cx="55" cy="55" r="38" fill="url(#kmv-inner-fill)" />
@@ -53,7 +53,7 @@ export function Logo({ className, withMark = false }: { className?: string; with
         fontSize="24"
         fontWeight="900"
         fontFamily="Plus Jakarta Sans, ui-sans-serif, system-ui, sans-serif"
-        fill="#A92D29"
+        fill="#059669"
         letterSpacing="-1.4"
       >
         KMV

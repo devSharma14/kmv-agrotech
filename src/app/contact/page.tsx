@@ -12,16 +12,16 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Reach KMV Agrotech & Engineering Works in Roorkee, Uttarakhand. Call, email, or send us your project brief.",
+    "Get in touch with KMV Agrotech & Engineering Works in Roorkee. Call, email or send us a message.",
 };
 
 export default function ContactPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Contact KMV Agrotech"
-        title="Tell us what you need to measure."
-        description="Whether it's a single sensor, a full automatic weather network or an open tender, our team responds within one working day with a quotation and proposed deployment plan."
+        eyebrow="Contact us"
+        title="Tell us what you need."
+        description="One product or a full lab — write to us with your list, and we'll send you a quote within a working day."
         meta={<Crumbs items={[{ label: "Home", href: "/" }, { label: "Contact" }]} />}
       />
 
@@ -29,11 +29,11 @@ export default function ContactPage() {
         <div className="container-x grid lg:grid-cols-12 gap-10 lg:gap-12">
           {/* Form */}
           <div className="lg:col-span-7">
-            <SectionLabel className="mb-4">Project brief</SectionLabel>
-            <h2 className="section-heading mb-3">Send us your enquiry.</h2>
+            <SectionLabel className="mb-4">Send a message</SectionLabel>
+            <h2 className="section-heading mb-3">Tell us what you need.</h2>
             <p className="text-slate-600 mb-8 max-w-lg">
-              All fields marked with <span className="text-accent font-semibold">*</span> are required.
-              We won't share your details with anyone.
+              Fields marked with <span className="text-accent font-semibold">*</span> are needed.
+              Your details are safe with us.
             </p>
             <ContactForm
               categoryOptions={categories.map((c) => ({ value: c.slug, label: c.name }))}
@@ -43,7 +43,7 @@ export default function ContactPage() {
           {/* Sidebar */}
           <aside className="lg:col-span-5 space-y-5">
             <div className="card p-7">
-              <SectionLabel className="mb-5">Direct lines</SectionLabel>
+              <SectionLabel className="mb-5">Reach us at</SectionLabel>
               <ul className="space-y-5">
                 <li>
                   <a href={`tel:${site.phoneRaw}`} className="flex gap-4 group">
@@ -121,7 +121,7 @@ export default function ContactPage() {
                   <div>29.86°N · 77.89°E</div>
                   <div className="flex items-center gap-2">
                     <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-                    Walk-ins welcome
+                    Drop in any time
                   </div>
                 </div>
                 <a

@@ -55,15 +55,15 @@ export function Header() {
           scrolled ? "shadow-card border-b border-slate-200" : "border-b border-slate-100"
         )}
       >
-        <div className="container-x flex h-[76px] items-center justify-between gap-6">
-          <Link href="/" className="flex items-center gap-3" aria-label="KMV Agrotech home">
-            <Logo className="h-11 w-11" />
-            <div className="leading-none hidden sm:block">
-              <div className="font-display text-[1.05rem] font-bold text-ink tracking-tight">
-                KMV Agrotech
+        <div className="container-x flex h-[88px] items-center justify-between gap-6">
+          <Link href="/" className="flex items-center gap-3.5" aria-label="KMV Agrotech home">
+            <Logo className="h-16 w-16" />
+            <div className="leading-tight hidden sm:block">
+              <div className="font-display text-[1.15rem] md:text-[1.25rem] font-bold text-ink tracking-tight">
+                KMV Agrotech &amp; Engineering Works
               </div>
-              <div className="text-[0.65rem] uppercase tracking-[0.12em] text-slate-500 mt-1 font-medium">
-                Engineering Works · Est. 1998
+              <div className="text-[0.7rem] uppercase tracking-[0.12em] text-slate-500 mt-1 font-medium">
+                Est. 2017 · Roorkee, India
               </div>
             </div>
           </Link>

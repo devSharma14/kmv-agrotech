@@ -33,11 +33,11 @@ type Seed = {
 };
 
 const seeds: Seed[] = [
-  // ==================== HYDROLOGICAL (water quality / lab) ====================
+  // ==================== LABORATORY — water quality ====================
   {
     slug: "bod-apparatus",
     name: "BOD Apparatus",
-    category: "hydrological",
+    category: "laboratory",
     image: "/products/laboratory/bod.jpg",
     summary:
       "Biochemical Oxygen Demand incubator and BOD measurement system for water quality and effluent analysis.",
@@ -55,7 +55,7 @@ const seeds: Seed[] = [
   {
     slug: "cod-apparatus",
     name: "COD Digester",
-    category: "hydrological",
+    category: "laboratory",
     image: "/products/laboratory/cod.jpg",
     summary:
       "Closed-reflux COD digestion apparatus for chemical oxygen demand determination in water and wastewater.",
@@ -72,7 +72,7 @@ const seeds: Seed[] = [
   {
     slug: "do-meter",
     name: "Dissolved Oxygen (DO) Meter",
-    category: "hydrological",
+    category: "laboratory",
     image: "/products/laboratory/do-meter.jpg",
     summary:
       "Portable digital DO meter with polarographic / optical sensor for surface water and effluent.",
@@ -89,7 +89,7 @@ const seeds: Seed[] = [
   {
     slug: "turbidity-meter",
     name: "Turbidity Meter",
-    category: "hydrological",
+    category: "laboratory",
     image: "/products/laboratory/turbidity-meters.jpg",
     summary:
       "Nephelometric turbidity measurement instrument for drinking water and surface water quality.",
@@ -106,7 +106,7 @@ const seeds: Seed[] = [
   {
     slug: "suspended-solids-analyzer",
     name: "Suspended Solids Analyzer",
-    category: "hydrological",
+    category: "laboratory",
     image: "/products/laboratory/suspended-solids.jpg",
     summary:
       "TSS analyser with optical scatter sensor for in-line and laboratory suspended solids quantification.",
@@ -121,11 +121,11 @@ const seeds: Seed[] = [
     applications: ["WWTP optimization", "Effluent monitoring", "River sediment"],
   },
 
-  // ==================== METEOROLOGICAL ====================
+  // ==================== LABORATORY — thermometers / hygrometers ====================
   {
     slug: "wet-dry-bulb-hygrometer",
     name: "Wet & Dry Bulb Hygrometer",
-    category: "meteorological",
+    category: "laboratory",
     image: "/products/laboratory/wet-dry-bulb.jpg",
     summary:
       "Classical Stevenson-screen hygrometer with paired wet- and dry-bulb thermometers for relative humidity.",
@@ -142,7 +142,7 @@ const seeds: Seed[] = [
   {
     slug: "laboratory-thermometers",
     name: "Laboratory Thermometers",
-    category: "meteorological",
+    category: "laboratory",
     image: "/products/laboratory/thermometers-laboratory.jpg",
     summary:
       "Precision mercury / spirit / digital thermometers for soil, lab and meteorological applications.",
@@ -157,11 +157,11 @@ const seeds: Seed[] = [
     applications: ["Agro-met", "Soil temperature", "General lab"],
   },
 
-  // ==================== AGRICULTURAL RESEARCH ====================
+  // ==================== BIOTECH + LABORATORY (mixed by image folder) ====================
   {
     slug: "ph-meter",
     name: "pH Meter",
-    category: "agricultural",
+    category: "laboratory",
     image: "/products/laboratory/ph-meters.jpg",
     summary:
       "Bench / portable digital pH meter with auto-temperature compensation and combination electrode.",
@@ -179,7 +179,7 @@ const seeds: Seed[] = [
   {
     slug: "conductivity-tds-meter",
     name: "Conductivity / TDS Meter",
-    category: "agricultural",
+    category: "laboratory",
     image: "/products/laboratory/conductivity-tds-meters.jpg",
     summary:
       "Digital EC and Total Dissolved Solids meter for soil, irrigation and laboratory water.",
@@ -196,7 +196,7 @@ const seeds: Seed[] = [
   {
     slug: "moisture-analyzer",
     name: "Moisture Analyzer",
-    category: "agricultural",
+    category: "balances",
     image: "/products/balances/moisture-analyzer.jpg",
     summary:
       "Halogen-heating moisture analyser for rapid moisture content determination in grain, soil and food.",
@@ -213,7 +213,7 @@ const seeds: Seed[] = [
   {
     slug: "autoclave",
     name: "Autoclave",
-    category: "agricultural",
+    category: "biotech",
     image: "/products/biotech/autoclave.jpg",
     summary:
       "Vertical / horizontal steam sterilizer for laboratory and biological sample sterilization.",
@@ -230,7 +230,7 @@ const seeds: Seed[] = [
   {
     slug: "bacteriological-incubator",
     name: "Bacteriological Incubator",
-    category: "agricultural",
+    category: "biotech",
     image: "/products/biotech/bacteriological-incubator.jpg",
     summary:
       "Forced-air bacteriological incubator for routine microbial culture between ambient +5 °C and 70 °C.",
@@ -247,7 +247,7 @@ const seeds: Seed[] = [
   {
     slug: "biosafety-cabinet",
     name: "Biosafety Cabinet (Class II A2)",
-    category: "agricultural",
+    category: "biotech",
     image: "/products/biotech/biosafety-cabinet.jpg",
     summary:
       "Class II A2 BSC for safe handling of low-to-moderate risk biological agents.",
@@ -264,7 +264,7 @@ const seeds: Seed[] = [
   {
     slug: "centrifuge",
     name: "Laboratory Centrifuge",
-    category: "agricultural",
+    category: "biotech",
     image: "/products/biotech/centrifuges.jpg",
     summary:
       "Benchtop and floor-standing centrifuges (refrigerated and non-refrigerated) for sample separation.",
@@ -281,7 +281,7 @@ const seeds: Seed[] = [
   {
     slug: "co2-incubator",
     name: "CO₂ Incubator",
-    category: "agricultural",
+    category: "biotech",
     image: "/products/biotech/co-incubator.jpg",
     summary:
       "Cell culture incubator with CO₂, humidity and temperature control for mammalian / plant tissue culture.",
@@ -298,7 +298,7 @@ const seeds: Seed[] = [
   {
     slug: "colony-counter",
     name: "Colony Counter",
-    category: "agricultural",
+    category: "biotech",
     image: "/products/biotech/colony-counters.jpg",
     summary:
       "Digital colony counter with magnifier and pen for accurate microbial colony enumeration.",
@@ -315,7 +315,7 @@ const seeds: Seed[] = [
   {
     slug: "deep-freezer",
     name: "Deep Freezer (−20 °C)",
-    category: "agricultural",
+    category: "biotech",
     image: "/products/biotech/deep-freezer.jpg",
     summary:
       "Laboratory deep freezer for sample storage from −10 to −25 °C.",
@@ -332,7 +332,7 @@ const seeds: Seed[] = [
   {
     slug: "homogenizer",
     name: "Homogenizer",
-    category: "agricultural",
+    category: "biotech",
     image: "/products/biotech/homogenizers.jpg",
     summary:
       "Rotor-stator homogenizer for tissue, sample and emulsion homogenization.",
@@ -349,7 +349,7 @@ const seeds: Seed[] = [
   {
     slug: "humidity-stability-chamber",
     name: "Humidity / Stability Chamber",
-    category: "agricultural",
+    category: "biotech",
     image: "/products/biotech/humidity-stability-chamber.jpg",
     summary:
       "Programmable temperature and humidity chamber for ICH-compliant drug stability testing.",
@@ -366,7 +366,7 @@ const seeds: Seed[] = [
   {
     slug: "ifm-inverted-fluorescence-microscope",
     name: "Inverted Fluorescence Microscope",
-    category: "agricultural",
+    category: "biotech",
     image: "/products/biotech/ifm.jpg",
     summary:
       "Inverted fluorescence microscope for live-cell imaging and tissue culture observation.",
@@ -383,7 +383,7 @@ const seeds: Seed[] = [
   {
     slug: "laboratory-refrigerator",
     name: "Laboratory Refrigerator",
-    category: "agricultural",
+    category: "biotech",
     image: "/products/biotech/laboratory-refrigerators.jpg",
     summary:
       "Pharmaceutical-grade laboratory refrigerator for vaccines, reagents and biological samples.",
@@ -400,7 +400,7 @@ const seeds: Seed[] = [
   {
     slug: "laminar-air-flow",
     name: "Laminar Air Flow Cabinet",
-    category: "agricultural",
+    category: "biotech",
     image: "/products/biotech/laf.jpg",
     summary:
       "Horizontal / vertical laminar air flow cabinet (Class 100) for sterile sample handling.",
@@ -417,7 +417,7 @@ const seeds: Seed[] = [
   {
     slug: "magnetic-stirrer",
     name: "Magnetic Stirrer",
-    category: "agricultural",
+    category: "biotech",
     image: "/products/biotech/magnetic-stirrer.jpg",
     summary:
       "Variable-speed magnetic stirrer for low-viscosity liquid mixing.",
@@ -434,7 +434,7 @@ const seeds: Seed[] = [
   {
     slug: "magnetic-stirrer-hot-plate",
     name: "Magnetic Stirrer with Hot Plate",
-    category: "agricultural",
+    category: "biotech",
     image: "/products/biotech/magnetic-stirrer-hot-plate.jpg",
     summary:
       "Combined magnetic stirrer + hot plate for heated stirring up to 380 °C.",
@@ -451,7 +451,7 @@ const seeds: Seed[] = [
   {
     slug: "orbital-incubator-shaker",
     name: "Orbital / Incubator Shaker",
-    category: "agricultural",
+    category: "biotech",
     image: "/products/biotech/orbital-shakers-incubator-shakers.jpg",
     summary:
       "Temperature-controlled orbital shaker for microbial / cell culture and assay protocols.",
@@ -468,7 +468,7 @@ const seeds: Seed[] = [
   {
     slug: "overhead-stirrer",
     name: "Overhead Stirrer",
-    category: "agricultural",
+    category: "biotech",
     image: "/products/biotech/overhead-stirrers.jpg",
     summary:
       "High-torque overhead stirrer for viscous samples and large volume mixing.",
@@ -485,7 +485,7 @@ const seeds: Seed[] = [
   {
     slug: "plant-growth-chamber",
     name: "Plant Growth Chamber",
-    category: "agricultural",
+    category: "biotech",
     image: "/products/biotech/plant-growth-chamber.jpg",
     summary:
       "Programmable controlled-environment chamber for plant growth and seed germination research.",
@@ -503,7 +503,7 @@ const seeds: Seed[] = [
   {
     slug: "thermal-cycler",
     name: "Thermal Cycler (PCR)",
-    category: "agricultural",
+    category: "biotech",
     image: "/products/biotech/thermal-cycler.jpg",
     summary:
       "96-well gradient thermal cycler for PCR and molecular biology workflows.",
@@ -520,7 +520,7 @@ const seeds: Seed[] = [
   {
     slug: "ultra-low-temperature-freezer",
     name: "Ultra-Low Temperature Freezer (−86 °C)",
-    category: "agricultural",
+    category: "biotech",
     image: "/products/biotech/ultra-low-temperature-freezers.jpg",
     summary:
       "Cascade-refrigeration ULT freezer for long-term sample storage at −86 °C.",
@@ -537,7 +537,7 @@ const seeds: Seed[] = [
   {
     slug: "vortex-mixer",
     name: "Vortex Mixer",
-    category: "agricultural",
+    category: "biotech",
     image: "/products/biotech/vortex-mixers.jpg",
     summary:
       "Compact variable-speed vortex mixer for tube agitation and sample mixing.",
@@ -554,7 +554,7 @@ const seeds: Seed[] = [
   {
     slug: "water-bath",
     name: "Water Bath",
-    category: "agricultural",
+    category: "biotech",
     image: "/products/biotech/water-bath.jpg",
     summary:
       "Constant-temperature water bath for reagent warming and sample incubation.",
@@ -571,7 +571,7 @@ const seeds: Seed[] = [
   {
     slug: "water-purification-system",
     name: "Water Purification System",
-    category: "agricultural",
+    category: "biotech",
     image: "/products/biotech/water-purification-system.jpg",
     summary:
       "Type I / II ultrapure water system with RO + EDI + UV stages for laboratory water.",
@@ -586,11 +586,11 @@ const seeds: Seed[] = [
     applications: ["HPLC", "PCR / molecular biology", "ICP-MS"],
   },
 
-  // ==================== SCIENTIFIC & SURVEY ====================
+  // ==================== BALANCES + LABORATORY analytical ====================
   {
     slug: "analytical-balance",
     name: "Analytical Balance",
-    category: "scientific",
+    category: "balances",
     image: "/products/balances/analytical-balance.jpg",
     summary: "0.1 mg readability analytical balance for precision laboratory weighing.",
     description:
@@ -607,7 +607,7 @@ const seeds: Seed[] = [
   {
     slug: "precision-balance",
     name: "Precision Balance",
-    category: "scientific",
+    category: "balances",
     image: "/products/balances/precision-balance.jpg",
     summary: "1 mg readability precision balance for routine laboratory weighing.",
     description:
@@ -623,7 +623,7 @@ const seeds: Seed[] = [
   {
     slug: "high-precision-balance",
     name: "High Precision Balance",
-    category: "scientific",
+    category: "balances",
     image: "/products/balances/high-precision-balance.jpg",
     summary: "0.001 g readability balance with extended capacity for general laboratory use.",
     description:
@@ -639,7 +639,7 @@ const seeds: Seed[] = [
   {
     slug: "table-top-balance",
     name: "Table Top Balance",
-    category: "scientific",
+    category: "balances",
     image: "/products/balances/table-top-balance.jpg",
     summary: "Compact table-top balance for shop-floor and dispatch weighing.",
     description:
@@ -655,7 +655,7 @@ const seeds: Seed[] = [
   {
     slug: "platform-balance",
     name: "Platform Balance",
-    category: "scientific",
+    category: "balances",
     image: "/products/balances/platform-balance.jpg",
     summary: "Floor / bench platform scale for heavy-duty weighing up to 500 kg.",
     description:
@@ -671,7 +671,7 @@ const seeds: Seed[] = [
   {
     slug: "semi-micro-balance",
     name: "Semi-Micro Balance",
-    category: "scientific",
+    category: "balances",
     image: "/products/balances/semi-micro-balances.jpg",
     summary: "0.01 mg readability semi-micro balance for trace analysis.",
     description:
@@ -687,7 +687,7 @@ const seeds: Seed[] = [
   {
     slug: "density-micro-balance",
     name: "Density / Micro Balance",
-    category: "scientific",
+    category: "balances",
     image: "/products/balances/density-balance-micro-balance.jpg",
     summary: "Density determination kit on microbalance — solid and liquid density.",
     description:
@@ -703,7 +703,7 @@ const seeds: Seed[] = [
   {
     slug: "digital-gsm-meter",
     name: "Digital GSM Meter",
-    category: "scientific",
+    category: "balances",
     image: "/products/balances/digital-gsm-meter.jpg",
     summary: "Fabric weight (g/m²) determination instrument for textile QA.",
     description:
@@ -719,7 +719,7 @@ const seeds: Seed[] = [
   {
     slug: "spectrophotometer-uv-vis",
     name: "Spectrophotometer (UV-Vis)",
-    category: "scientific",
+    category: "laboratory",
     image: "/products/laboratory/spectrophotometers-uv-vis.jpg",
     summary: "Double-beam UV-Vis spectrophotometer 200–1100 nm for analytical chemistry.",
     description:
@@ -735,7 +735,7 @@ const seeds: Seed[] = [
   {
     slug: "flame-photometer",
     name: "Flame Photometer",
-    category: "scientific",
+    category: "laboratory",
     image: "/products/laboratory/flame-photometers.jpg",
     summary: "Digital flame photometer for Na, K, Li, Ca quantification in solution.",
     description:
@@ -751,7 +751,7 @@ const seeds: Seed[] = [
   {
     slug: "colorimeter",
     name: "Colorimeter",
-    category: "scientific",
+    category: "laboratory",
     image: "/products/laboratory/colorimeters.jpg",
     summary: "Visible-range single / dual-cell colorimeter for routine quantitative analysis.",
     description:
@@ -767,7 +767,7 @@ const seeds: Seed[] = [
   {
     slug: "data-logger",
     name: "Data Logger",
-    category: "scientific",
+    category: "laboratory",
     image: "/products/laboratory/data-loggers.jpg",
     summary: "Multi-channel data logger for temperature, humidity, voltage and analog signals.",
     description:
@@ -781,11 +781,11 @@ const seeds: Seed[] = [
     applications: ["Field studies", "HVAC validation", "Research"],
   },
 
-  // ==================== GEOLOGICAL / GEOTECHNICAL / MICROSCOPY ====================
+  // ==================== MICROSCOPES + LABORATORY heat / sieving ====================
   {
     slug: "research-microscope",
     name: "Research Microscope",
-    category: "geological",
+    category: "microscopes",
     image: "/products/microscopes/research.jpg",
     summary:
       "Trinocular research-grade compound microscope with infinity optics for advanced biological and material research.",
@@ -803,7 +803,7 @@ const seeds: Seed[] = [
   {
     slug: "polarizing-microscope",
     name: "Polarizing Microscope",
-    category: "geological",
+    category: "microscopes",
     image: "/products/microscopes/polarizing.jpg",
     summary: "Polarizing (petrographic) microscope for mineral identification and crystallography.",
     description:
@@ -819,7 +819,7 @@ const seeds: Seed[] = [
   {
     slug: "metallurgical-microscope",
     name: "Metallurgical Microscope",
-    category: "geological",
+    category: "microscopes",
     image: "/products/microscopes/metallurgical.jpg",
     summary: "Inverted / upright metallurgical microscope for polished metal sample analysis.",
     description:
@@ -835,7 +835,7 @@ const seeds: Seed[] = [
   {
     slug: "gemological-microscope",
     name: "Gemological Microscope",
-    category: "geological",
+    category: "microscopes",
     image: "/products/microscopes/gemological.jpg",
     summary: "Stereo zoom microscope with darkfield illumination for gem identification.",
     description:
@@ -851,7 +851,7 @@ const seeds: Seed[] = [
   {
     slug: "stereo-zoom-microscope",
     name: "Stereo Zoom Microscope",
-    category: "geological",
+    category: "microscopes",
     image: "/products/microscopes/stereo-zoom.jpg",
     summary: "Stereo zoom microscope for 3D sample observation and dissection.",
     description:
@@ -867,7 +867,7 @@ const seeds: Seed[] = [
   {
     slug: "phase-contrast-microscope",
     name: "Phase Contrast Microscope",
-    category: "geological",
+    category: "microscopes",
     image: "/products/microscopes/phase-contrast.jpg",
     summary: "Phase contrast biological microscope for unstained live cell observation.",
     description:
@@ -883,7 +883,7 @@ const seeds: Seed[] = [
   {
     slug: "inverted-tissue-culture-microscope",
     name: "Inverted Tissue Culture Microscope",
-    category: "geological",
+    category: "microscopes",
     image: "/products/microscopes/inverted-tissue-culture.jpg",
     summary: "Inverted microscope for tissue culture observation and live-cell work.",
     description:
@@ -899,7 +899,7 @@ const seeds: Seed[] = [
   {
     slug: "digital-microscope",
     name: "Digital Microscope",
-    category: "geological",
+    category: "microscopes",
     image: "/products/microscopes/digital.jpg",
     summary: "Camera-integrated digital microscope with on-board screen / USB to PC.",
     description:
@@ -915,7 +915,7 @@ const seeds: Seed[] = [
   {
     slug: "multi-viewing-microscope",
     name: "Multi-Viewing Microscope",
-    category: "geological",
+    category: "microscopes",
     image: "/products/microscopes/multi-viewing.jpg",
     summary: "Teaching multi-head microscope (5 / 10-user) for collaborative examination.",
     description:
@@ -931,7 +931,7 @@ const seeds: Seed[] = [
   {
     slug: "surgical-operating-microscope",
     name: "Surgical / Operating Microscope",
-    category: "geological",
+    category: "microscopes",
     image: "/products/microscopes/surgical-operating.jpg",
     summary: "Operating microscope for ENT / dental / ophthalmology surgical procedures.",
     description:
@@ -947,7 +947,7 @@ const seeds: Seed[] = [
   {
     slug: "educational-microscope",
     name: "Educational / Measuring Microscope",
-    category: "geological",
+    category: "microscopes",
     image: "/products/microscopes/educational-measuring.jpg",
     summary: "Student / teaching microscope with measuring stage for schools and colleges.",
     description:
@@ -963,7 +963,7 @@ const seeds: Seed[] = [
   {
     slug: "laboratory-microscope",
     name: "Laboratory Microscope",
-    category: "geological",
+    category: "microscopes",
     image: "/products/microscopes/laboratory.jpg",
     summary: "General-purpose binocular / trinocular biological microscope.",
     description:
@@ -979,7 +979,7 @@ const seeds: Seed[] = [
   {
     slug: "muffle-furnace",
     name: "Muffle Furnace",
-    category: "geological",
+    category: "laboratory",
     image: "/products/laboratory/muffle-furnaces.jpg",
     summary: "High-temperature muffle furnace for ashing, sintering and heat treatment.",
     description:
@@ -995,7 +995,7 @@ const seeds: Seed[] = [
   {
     slug: "hot-air-oven",
     name: "Hot Air Oven",
-    category: "geological",
+    category: "laboratory",
     image: "/products/laboratory/hot-air-oven.jpg",
     summary: "Forced-convection hot air oven for drying and sterilization up to 250 °C.",
     description:
@@ -1011,7 +1011,7 @@ const seeds: Seed[] = [
   {
     slug: "heating-mantle",
     name: "Heating Mantle",
-    category: "geological",
+    category: "laboratory",
     image: "/products/laboratory/heating-mantles.jpg",
     summary: "Hemispherical heating mantle for round-bottom flask heating up to 450 °C.",
     description:
@@ -1027,7 +1027,7 @@ const seeds: Seed[] = [
   {
     slug: "sieve-shaker",
     name: "Sieve Shaker",
-    category: "geological",
+    category: "laboratory",
     image: "/products/laboratory/sieve-shakers.jpg",
     summary: "Mechanical sieve shaker for particle size analysis up to 200 mm sieves.",
     description:
@@ -1043,7 +1043,7 @@ const seeds: Seed[] = [
   {
     slug: "test-sieves",
     name: "Test Sieves",
-    category: "geological",
+    category: "laboratory",
     image: "/products/laboratory/test-sieves.jpg",
     summary: "ASTM / IS test sieves with brass / stainless mesh for particle sizing.",
     description:
@@ -1059,7 +1059,7 @@ const seeds: Seed[] = [
   {
     slug: "planetary-ball-mill",
     name: "Planetary Ball Mill",
-    category: "geological",
+    category: "laboratory",
     image: "/products/laboratory/planetory-ball-mill.jpg",
     summary: "High-energy planetary ball mill for sample grinding to micron / sub-micron size.",
     description:
