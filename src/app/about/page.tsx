@@ -10,7 +10,7 @@ import { brands } from "@/data/brands";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "How KMV Agrotech & Engineering Works grew from a small Roorkee shop into a trusted supplier of lab and scientific instruments across India.",
+    "How KMV Agrotech & Engineering Works grew from a small Roorkee shop into a trusted supplier of scientific instruments across India.",
 };
 
 export default function AboutPage() {
@@ -18,8 +18,8 @@ export default function AboutPage() {
     <>
       <PageHeader
         eyebrow="About us"
-        title="Helping India's labs since 2017."
-        description="We are KMV Agrotech & Engineering Works, based in Roorkee. We supply microscopes, weighing scales, scientific instruments and biotech machines to schools, colleges, research labs and companies across India."
+        title="Helping India's institutions since 2017."
+        description="We are KMV Agrotech & Engineering Works, based in Roorkee. We supply microscopes, weighing scales, scientific instruments and biotech machines to schools, colleges, research institutes and companies across India."
         meta={<Crumbs items={[{ label: "Home", href: "/" }, { label: "About" }]} />}
       />
 
@@ -29,23 +29,23 @@ export default function AboutPage() {
           <div className="lg:col-span-5">
             <SectionLabel className="mb-4">Our story</SectionLabel>
             <h2 className="section-heading">
-              A small Roorkee shop, now serving labs all over India.
+              A small Roorkee shop, now serving institutions all over India.
             </h2>
           </div>
           <div className="lg:col-span-7 space-y-5 text-slate-700 leading-relaxed">
             <p>
               We started in 2017 in Roorkee. The idea was simple: make it easy for Indian
-              labs to buy good equipment, get honest advice, and get quick help when something
+              institutions to buy good equipment, get honest advice, and get quick help when something
               needs fixing.
             </p>
             <p>
-              Today we sell to IITs, NITs, ICAR labs, farm universities and many big companies
+              Today we sell to IITs, NITs, ICAR institutes, farm universities and many large companies
               across India. We work with {brands.length}+ brands. Our team is still small, so
-              we install and train at the lab ourselves.
+              we install and train on site ourselves.
             </p>
             <p>
               Roorkee is still our home. We are right next to IIT Roorkee and India's top
-              research labs — and a short drive from many of the labs we serve.
+              research institutes — and a short drive from many of the customers we serve.
             </p>
           </div>
         </div>
@@ -84,7 +84,7 @@ export default function AboutPage() {
               num="04"
               icon={<Users className="h-6 w-6" />}
               title="Free training"
-              body="We show your team how to use the machine — so the lab works from day one."
+              body="We show your team how to use the machine — so you are up and running from day one."
             />
           </div>
         </div>

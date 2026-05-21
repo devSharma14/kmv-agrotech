@@ -10,7 +10,7 @@ import { clientSectors } from "@/data/brands";
 export const metadata: Metadata = {
   title: "Industries we serve",
   description:
-    "KMV Agrotech supplies labs at IITs, NITs, ICAR institutes, agricultural universities and industries across India.",
+    "KMV Agrotech supplies IITs, NITs, ICAR institutes, agricultural universities and industries across India.",
 };
 
 // Per-sector visual identity: icon + accent colour + tint.
@@ -41,8 +41,8 @@ export default function ClientsPage() {
     <>
       <PageHeader
         eyebrow="Who we work with"
-        title="IITs, ICAR labs, universities and big companies."
-        description="From IIT and NIT engineering labs to ICAR research labs, farm universities and company labs — our equipment is in use all over India."
+        title="IITs, ICAR institutes, universities and leading companies."
+        description="From IIT and NIT engineering departments to ICAR research institutes, farm universities and company R&D centres — our equipment is in use all over India."
         meta={<Crumbs items={[{ label: "Home", href: "/" }, { label: "Industries" }]} />}
       />
 
@@ -68,7 +68,7 @@ export default function ClientsPage() {
               <h2 className="section-heading">Grouped by type.</h2>
             </div>
             <p className="lg:col-span-5 lg:pt-12 section-sub">
-              Tap any group to see all the labs and companies in it.
+              Tap any group to see all the institutions and companies in it.
             </p>
           </div>
 
@@ -95,7 +95,7 @@ export default function ClientsPage() {
               We deliver to <span className="text-accent">{coverage.length}+ states</span> and union territories.
             </h2>
             <p className="mt-4 text-white/70 leading-relaxed max-w-xl">
-              From the Himalayas to the Deccan, from coastal labs to mountain research
+              From the Himalayas to the Deccan, from coastal stations to mountain research
               stations — we ship anywhere in India.
             </p>
           </div>
@@ -122,7 +122,7 @@ export default function ClientsPage() {
               <Quote className="h-10 w-10 text-accent mb-6" />
               <blockquote className="font-display text-2xl md:text-3xl text-ink leading-snug font-semibold tracking-tight">
                 The KMV team helped us pick the right balances and microscopes, set them up
-                in the lab, and trained our students. Years on, they still pick up the phone.
+                up for us, and trained our students. Years on, they still pick up the phone.
               </blockquote>
               <div className="mt-8 flex items-center gap-4">
                 <div className="h-10 w-1 bg-accent" />
@@ -145,7 +145,7 @@ export default function ClientsPage() {
             <div className="lg:col-span-7">
               <SectionLabel className="mb-4">Work with us</SectionLabel>
               <h2 className="section-heading">
-                Quotes, tenders and lab enquiries — answered within 24 hours.
+                Quotes, tenders and enquiries — answered within 24 hours.
               </h2>
             </div>
             <div className="lg:col-span-5 flex flex-col gap-3">

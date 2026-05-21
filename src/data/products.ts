@@ -42,7 +42,7 @@ const seeds: Seed[] = [
     summary:
       "Biochemical Oxygen Demand incubator and BOD measurement system for water quality and effluent analysis.",
     description:
-      "Constant-temperature BOD incubator and bottle setup for the standard BOD test used in water and wastewater quality assessment. Suitable for municipal labs, pollution control boards and environmental research.",
+      "Constant-temperature BOD incubator and bottle setup for the standard BOD test used in water and wastewater quality assessment. Suitable for municipal testing, pollution control boards and environmental research.",
     applications: ["Water quality testing", "Effluent monitoring", "Pollution control"],
     featured: true,
   },
@@ -55,7 +55,7 @@ const seeds: Seed[] = [
       "Closed-reflux COD digestion apparatus for chemical oxygen demand determination in water and wastewater.",
     description:
       "COD digester block with thermostatic control for the closed-reflux titrimetric / colorimetric method. Accepts multiple sample tubes.",
-    applications: ["Wastewater analysis", "Effluent compliance", "Lab QA/QC"],
+    applications: ["Wastewater analysis", "Effluent compliance", "QA/QC"],
   },
   {
     slug: "do-meter",
@@ -85,7 +85,7 @@ const seeds: Seed[] = [
     category: "laboratory",
     image: "/products/laboratory/suspended-solids.jpg",
     summary:
-      "TSS analyser with optical scatter sensor for in-line and laboratory suspended solids quantification.",
+      "TSS analyser with optical scatter sensor for in-line and suspended solids quantification.",
     description:
       "For total suspended solids in surface water, treatment plants and industrial effluent. Configurable for grab-sample or in-line installation.",
     applications: ["WWTP optimization", "Effluent monitoring", "River sediment"],
@@ -93,26 +93,26 @@ const seeds: Seed[] = [
 
   // ==================== LABORATORY — thermometers / hygrometers ====================
   {
-    slug: "wet-dry-bulb-hygrometer",
-    name: "Wet & Dry Bulb Hygrometer",
+    slug: "wet-dry-bulb-thermometers",
+    name: "Wet & Dry Bulb Thermometers",
     category: "laboratory",
     image: "/products/laboratory/wet-dry-bulb.jpg",
     summary:
-      "Classical Stevenson-screen hygrometer with paired wet- and dry-bulb thermometers for relative humidity.",
+      "Paired wet- and dry-bulb thermometers for measuring relative humidity.",
     description:
-      "Reference humidity measurement using two precision mercury / spirit thermometers — one freely exposed, one wrapped in wetted muslin. Used in IMD-grade observations and traceable RH calibration.",
-    applications: ["IMD observations", "Lab humidity reference", "Agro-met"],
+      "Reference humidity measurement using two precision thermometers — one freely exposed, one wrapped in wetted muslin. Used in meteorological observations and humidity reference.",
+    applications: ["IMD observations", "Humidity reference", "Agro-met"],
   },
   {
-    slug: "laboratory-thermometers",
-    name: "Laboratory Thermometers",
+    slug: "thermometers",
+    name: "Thermometers",
     category: "laboratory",
     image: "/products/laboratory/thermometers-laboratory.jpg",
     summary:
-      "Precision mercury / spirit / digital thermometers for soil, lab and meteorological applications.",
+      "Precision mercury / spirit / digital thermometers for soil and meteorological applications.",
     description:
       "Maximum, minimum, dry-bulb, wet-bulb, water, soil and infrared variants — supplied with NABL-traceable calibration on request.",
-    applications: ["Agro-met", "Soil temperature", "General lab"],
+    applications: ["Agro-met", "Soil temperature", "General use"],
   },
 
   // ==================== BIOTECH + LABORATORY (mixed by image folder) ====================
@@ -124,7 +124,7 @@ const seeds: Seed[] = [
     summary:
       "Bench / portable digital pH meter with auto-temperature compensation and combination electrode.",
     description:
-      "For soil extracts, water and laboratory chemistry. High-resolution readout, multi-point auto-buffer recognition, glass combination electrode included.",
+      "For soil extracts, water and chemistry. High-resolution readout, multi-point auto-buffer recognition, glass combination electrode included.",
     applications: ["Soil analysis", "Water quality", "Tissue culture media"],
     featured: true,
   },
@@ -134,9 +134,9 @@ const seeds: Seed[] = [
     category: "laboratory",
     image: "/products/laboratory/conductivity-tds-meters.jpg",
     summary:
-      "Digital EC and Total Dissolved Solids meter for soil, irrigation and laboratory water.",
+      "Digital EC and Total Dissolved Solids meter for soil, irrigation and purified water.",
     description:
-      "Microprocessor-based, with multiple measurement modes (EC, TDS, salinity) and a multi-ring conductivity cell. Standard for soil-water solution analysis in agronomy labs.",
+      "Microprocessor-based, with multiple measurement modes (EC, TDS, salinity) and a multi-ring conductivity cell. Standard for soil-water solution analysis in agronomy.",
     applications: ["Soil EC", "Irrigation water", "Hydroponics"],
   },
   {
@@ -148,7 +148,7 @@ const seeds: Seed[] = [
       "Halogen-heating moisture analyser for rapid moisture content determination in grain, soil and food.",
     description:
       "Loss-on-drying balance with infrared / halogen heater and integrated weighing. Programmable temperature ramps and auto-stop on weight stability.",
-    applications: ["Grain QA", "Soil moisture", "Food labs"],
+    applications: ["Grain QA", "Soil moisture", "Food testing"],
   },
   {
     slug: "autoclave",
@@ -156,36 +156,36 @@ const seeds: Seed[] = [
     category: "biotech",
     image: "/products/biotech/autoclave.jpg",
     summary:
-      "Vertical / horizontal steam sterilizer for laboratory and biological sample sterilization.",
+      "Vertical / horizontal steam sterilizer for biological sample sterilization.",
     description:
       "Pressure-controlled steam sterilization, available in vertical, horizontal and benchtop configurations with various chamber sizes.",
     applications: ["Microbiology", "Tissue culture", "Glassware sterilization"],
   },
   {
-    slug: "bacteriological-incubator",
-    name: "Bacteriological Incubator",
+    slug: "incubator",
+    name: "Incubator",
     category: "biotech",
     image: "/products/biotech/bacteriological-incubator.jpg",
     summary:
-      "Forced-air bacteriological incubator for routine microbial culture with precise temperature control.",
+      "Forced-air incubator for routine microbial culture with precise temperature control.",
     description:
       "Double-walled chamber with PID control, perforated stainless shelves and lit interior. Standard for water-quality, food and clinical microbiology.",
-    applications: ["Microbiology", "Coliform testing", "Food labs"],
+    applications: ["Microbiology", "Coliform testing", "Food testing"],
   },
   {
     slug: "biosafety-cabinet",
-    name: "Biosafety Cabinet (Class II A2)",
+    name: "Biosafety Cabinet",
     category: "biotech",
     image: "/products/biotech/biosafety-cabinet.jpg",
     summary:
-      "Class II A2 BSC for safe handling of low-to-moderate risk biological agents.",
+      "Biosafety cabinet for safe handling of low-to-moderate risk biological agents.",
     description:
       "HEPA-filtered laminar airflow cabinet protecting operator, sample and environment. Balanced inflow and downflow to recognised biosafety standards.",
-    applications: ["Microbiology", "Cell culture", "Clinical labs"],
+    applications: ["Microbiology", "Cell culture", "Clinical testing"],
   },
   {
     slug: "centrifuge",
-    name: "Laboratory Centrifuge",
+    name: "Centrifuge",
     category: "biotech",
     image: "/products/biotech/centrifuges.jpg",
     summary:
@@ -214,7 +214,7 @@ const seeds: Seed[] = [
       "Digital colony counter with magnifier and pen for accurate microbial colony enumeration.",
     description:
       "Backlit dark-field illumination with adjustable magnification. Auto-counting digital variants also available.",
-    applications: ["Water microbiology", "Food micro", "Clinical labs"],
+    applications: ["Water microbiology", "Food micro", "Clinical testing"],
   },
   {
     slug: "deep-freezer",
@@ -222,7 +222,7 @@ const seeds: Seed[] = [
     category: "biotech",
     image: "/products/biotech/deep-freezer.jpg",
     summary:
-      "Laboratory deep freezer for low-temperature sample storage.",
+      "Deep freezer for low-temperature sample storage.",
     description:
       "CFC-free, double-walled cabinet with PUF insulation. Available in a range of capacities, vertical or chest-style.",
     applications: ["Reagent storage", "Vaccine storage", "Sample archive"],
@@ -250,23 +250,23 @@ const seeds: Seed[] = [
     applications: ["Pharmaceutical stability", "Seed studies", "Material aging"],
   },
   {
-    slug: "ifm-inverted-fluorescence-microscope",
-    name: "Inverted Fluorescence Microscope",
+    slug: "ice-flaking-machine",
+    name: "Ice Flaking Machine",
     category: "biotech",
     image: "/products/biotech/ifm.jpg",
     summary:
-      "Inverted fluorescence microscope for live-cell imaging and tissue culture observation.",
+      "Benchtop ice flaking machine producing flake ice for sample cooling and preservation.",
     description:
-      "Trinocular inverted microscope with fluorescence illuminator (Hg or LED) and standard FITC / TRITC / DAPI filter cubes.",
-    applications: ["Live cell imaging", "Fluorescence microscopy", "Cell biology"],
+      "Produces soft flake ice for keeping samples, reagents and biological materials cold during work, storage and transport.",
+    applications: ["Sample cooling", "Reagent storage", "Specimen transport"],
   },
   {
-    slug: "laboratory-refrigerator",
-    name: "Laboratory Refrigerator",
+    slug: "refrigerator",
+    name: "Refrigerator",
     category: "biotech",
     image: "/products/biotech/laboratory-refrigerators.jpg",
     summary:
-      "Pharmaceutical-grade laboratory refrigerator for vaccines, reagents and biological samples.",
+      "Pharmaceutical-grade refrigerator for vaccines, reagents and biological samples.",
     description:
       "Precisely controlled cold storage with digital display, audible alarm and secure lock. Available in a range of capacities.",
     applications: ["Vaccine storage", "Reagent storage", "Sample preservation"],
@@ -388,9 +388,9 @@ const seeds: Seed[] = [
     category: "biotech",
     image: "/products/biotech/water-purification-system.jpg",
     summary:
-      "Ultrapure water system with RO + EDI + UV stages for laboratory water.",
+      "Ultrapure water system with RO + EDI + UV stages for ultrapure water.",
     description:
-      "Multistage purification producing ultrapure water for HPLC, molecular biology and analytical labs.",
+      "Multistage purification producing ultrapure water for HPLC, molecular biology and analytical work.",
     applications: ["HPLC", "PCR / molecular biology", "ICP-MS"],
   },
 
@@ -400,10 +400,10 @@ const seeds: Seed[] = [
     name: "Analytical Balance",
     category: "balances",
     image: "/products/balances/analytical-balance.jpg",
-    summary: "Analytical balance for precision laboratory weighing.",
+    summary: "Analytical balance for precision weighing.",
     description:
       "Internal-calibration analytical balance with anti-vibration draft shield and built-in level indicator. Available in a range of capacities.",
-    applications: ["Analytical chemistry", "Pharma QC", "R&D labs"],
+    applications: ["Analytical chemistry", "Pharma QC", "R&D"],
     featured: true,
   },
   {
@@ -411,20 +411,20 @@ const seeds: Seed[] = [
     name: "Precision Balance",
     category: "balances",
     image: "/products/balances/precision-balance.jpg",
-    summary: "Precision balance for routine laboratory weighing.",
+    summary: "Precision balance for routine weighing.",
     description:
       "Top-loading precision balance with stainless pan and bright LCD. Available in a range of capacities.",
-    applications: ["General laboratory", "Sample prep", "Education"],
+    applications: ["General use", "Sample prep", "Education"],
   },
   {
     slug: "high-precision-balance",
     name: "High Precision Balance",
     category: "balances",
     image: "/products/balances/high-precision-balance.jpg",
-    summary: "High-readability balance with extended capacity for general laboratory use.",
+    summary: "High-readability balance with extended capacity for general use.",
     description:
       "Multiple readability variants with backlit LCD and protective glass shield. Robust mechanical and thermal stability.",
-    applications: ["Lab weighing", "Material QA", "Education"],
+    applications: ["Weighing", "Material QA", "Education"],
   },
   {
     slug: "table-top-balance",
@@ -453,8 +453,8 @@ const seeds: Seed[] = [
     image: "/products/balances/semi-micro-balances.jpg",
     summary: "Semi-micro balance for trace analysis.",
     description:
-      "Glass-encased weighing chamber with internal calibration and ergonomic touch controls. For pharma, materials and analytical labs.",
-    applications: ["Trace analysis", "Pharma QC", "Reference labs"],
+      "Glass-encased weighing chamber with internal calibration and ergonomic touch controls. For pharma, materials and analytical work.",
+    applications: ["Trace analysis", "Pharma QC", "Metrology"],
   },
   {
     slug: "density-micro-balance",
@@ -473,7 +473,7 @@ const seeds: Seed[] = [
     image: "/products/balances/digital-gsm-meter.jpg",
     summary: "Fabric weight determination instrument for textile QA.",
     description:
-      "Round-cutter sample with digital balance setup configured for direct GSM readout. Standard for textile mills, paper and nonwovens labs.",
+      "Round-cutter sample with digital balance setup configured for direct GSM readout. Standard for textile mills, paper and nonwovens testing.",
     applications: ["Textile QA", "Paper testing", "Nonwovens"],
   },
   {
@@ -493,7 +493,7 @@ const seeds: Seed[] = [
     image: "/products/laboratory/flame-photometers.jpg",
     summary: "Digital flame photometer for Na, K, Li, Ca quantification in solution.",
     description:
-      "LPG-fed atomizer with optical filters and photodetectors per element. Standard for clinical and soil-water labs.",
+      "LPG-fed atomizer with optical filters and photodetectors per element. Standard for clinical and soil-water testing.",
     applications: ["Soil sodium / potassium", "Clinical electrolytes", "Water"],
   },
   {
@@ -504,7 +504,7 @@ const seeds: Seed[] = [
     summary: "Visible-range single / dual-cell colorimeter for routine quantitative analysis.",
     description:
       "Filter-based colorimeter with selectable wavelengths for absorbance / transmittance / concentration measurement.",
-    applications: ["Education", "Field labs", "Routine QC"],
+    applications: ["Education", "Field use", "Routine QC"],
   },
   {
     slug: "data-logger",
@@ -557,7 +557,7 @@ const seeds: Seed[] = [
     image: "/products/microscopes/gemological.jpg",
     summary: "Stereo zoom microscope with darkfield illumination for gem identification.",
     description:
-      "Zoom magnification with gem clamp / inclusion light. Standard configuration for gem labs and jewellery testing.",
+      "Zoom magnification with gem clamp / inclusion light. Standard configuration for gemmology and jewellery testing.",
     applications: ["Gem identification", "Jewellery QA", "Education"],
   },
   {
@@ -631,14 +631,14 @@ const seeds: Seed[] = [
     applications: ["Schools", "Colleges", "Training"],
   },
   {
-    slug: "laboratory-microscope",
-    name: "Laboratory Microscope",
+    slug: "microscope",
+    name: "Microscope",
     category: "microscopes",
     image: "/products/microscopes/laboratory.jpg",
     summary: "General-purpose binocular / trinocular biological microscope.",
     description:
       "Workhorse compound microscope with a range of achromatic objectives and Abbe condenser. Standard for routine diagnostics.",
-    applications: ["Pathology", "General lab", "Research"],
+    applications: ["Pathology", "General use", "Research"],
   },
   {
     slug: "muffle-furnace",
@@ -677,7 +677,7 @@ const seeds: Seed[] = [
     image: "/products/laboratory/sieve-shakers.jpg",
     summary: "Mechanical sieve shaker for particle size analysis across a range of sieve sizes.",
     description:
-      "Vibratory or rotap-style shaker with timer and amplitude control. Standard for soil, aggregate and powder labs.",
+      "Vibratory or rotap-style shaker with timer and amplitude control. Standard for soil, aggregate and powder testing.",
     applications: ["Soil PSD", "Aggregate", "Cement"],
   },
   {
@@ -691,13 +691,13 @@ const seeds: Seed[] = [
     applications: ["Soil testing", "Aggregate", "Pharmaceutical"],
   },
   {
-    slug: "planetary-ball-mill",
-    name: "Planetary Ball Mill",
+    slug: "pulverizer",
+    name: "Pulverizer",
     category: "laboratory",
     image: "/products/laboratory/planetory-ball-mill.jpg",
-    summary: "High-energy planetary ball mill for sample grinding to micron / sub-micron size.",
+    summary: "Pulverizer for grinding samples to fine and sub-micron particle size.",
     description:
-      "Multi-station planetary mill with reversible rotation, programmable timing and protective housing. Stainless / agate / zirconia jars.",
+      "Multi-station grinding unit with reversible rotation, programmable timing and protective housing, with a choice of grinding jars.",
     applications: ["Geology", "Materials science", "Nano powders"],
   },
 ];

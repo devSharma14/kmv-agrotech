@@ -19,7 +19,7 @@ export default function ContactPage() {
       <PageHeader
         eyebrow="Contact us"
         title="Tell us what you need."
-        description="One product or a full lab — send us your list by phone, email or WhatsApp, and we'll send you a quote within a working day."
+        description="One product or a full setup — send us your list by phone, email or WhatsApp, and we'll send you a quote within a working day."
         meta={<Crumbs items={[{ label: "Home", href: "/" }, { label: "Contact" }]} />}
       />
 

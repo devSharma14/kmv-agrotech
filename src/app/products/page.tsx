@@ -14,7 +14,7 @@ import { LogoTile } from "@/components/LogoTile";
 export const metadata: Metadata = {
   title: "Products",
   description:
-    "Browse the KMV Agrotech catalogue — microscopes, weighing balances, laboratory instruments and biotech equipment.",
+    "Browse the KMV Agrotech catalogue — microscopes, weighing balances, scientific instruments and biotech equipment.",
 };
 
 export default function ProductsIndex() {

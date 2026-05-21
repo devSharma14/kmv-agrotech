@@ -7,15 +7,15 @@ import { ArrowUpRight } from "lucide-react";
 const FEATURED = {
   src: "/products/microscopes/research.jpg",
   name: "Research Microscope",
-  href: "/products/geological/research-microscope",
+  href: "/products/microscopes/research-microscope",
   caption: "Research / Trinocular",
 };
 
 const TILES = [
-  { src: "/products/biotech/plant-growth-chamber.jpg", name: "Plant Growth Chamber", href: "/products/agricultural/plant-growth-chamber" },
-  { src: "/products/balances/analytical-balance.jpg", name: "Analytical Balance", href: "/products/scientific/analytical-balance" },
-  { src: "/products/laboratory/spectrophotometers-uv-vis.jpg", name: "UV-Vis Spectrophotometer", href: "/products/scientific/spectrophotometer-uv-vis" },
-  { src: "/products/biotech/centrifuges.jpg", name: "Lab Centrifuge", href: "/products/agricultural/centrifuge" },
+  { src: "/products/biotech/plant-growth-chamber.jpg", name: "Plant Growth Chamber", href: "/products/biotech/plant-growth-chamber" },
+  { src: "/products/balances/analytical-balance.jpg", name: "Analytical Balance", href: "/products/balances/analytical-balance" },
+  { src: "/products/laboratory/spectrophotometers-uv-vis.jpg", name: "UV-Vis Spectrophotometer", href: "/products/laboratory/spectrophotometer-uv-vis" },
+  { src: "/products/biotech/centrifuges.jpg", name: "Centrifuge", href: "/products/biotech/centrifuge" },
 ];
 
 export function HeroVisual() {

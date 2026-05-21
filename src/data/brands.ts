@@ -70,8 +70,8 @@ export const clientSectors = [
     ],
   },
   {
-    name: "ICAR Labs",
-    description: "Government farm-research labs working on crops, soil and farming.",
+    name: "ICAR Institutes",
+    description: "Government farm-research institutes working on crops, soil and farming.",
     clients: [
       "IARI, Pusa, New Delhi",
       "CRIDA, Hyderabad",
@@ -89,7 +89,7 @@ export const clientSectors = [
   },
   {
     name: "Research Institutes",
-    description: "Forest, mountain, geology and satellite-imaging research labs.",
+    description: "Forest, mountain, geology and satellite-imaging research institutes.",
     clients: [
       "FRI, Dehradun",
       "WIHG, Dehradun",
@@ -111,7 +111,7 @@ export const clientSectors = [
   },
   {
     name: "Companies & Government",
-    description: "Big companies and government departments that buy from us.",
+    description: "Leading companies and government departments that buy from us.",
     clients: [
       "BBMB, Sundernagar",
       "CGWB, Chandigarh",

@@ -66,7 +66,7 @@ export default function Home() {
 
             <p className="mt-6 text-base md:text-lg text-slate-600 leading-relaxed max-w-xl">
               We supply microscopes, weighing scales, scientific instruments and biotech machines.
-              Schools, colleges, research labs and companies across India order from us.
+              Schools, colleges, research institutes and companies across India order from us.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -117,7 +117,7 @@ export default function Home() {
                 key={c.name}
                 name={c.name}
                 src={c.logo}
-                variant="dark"
+                variant="light"
                 className="h-24 rounded-lg border border-white/10 overflow-hidden"
               />
             ))}
@@ -206,10 +206,10 @@ export default function Home() {
             <div className="lg:col-span-7">
               <span className="accent-rule" />
               <SectionLabel className="mb-4">Who we work with</SectionLabel>
-              <h2 className="section-heading">From IITs to factories — labs of every size.</h2>
+              <h2 className="section-heading">From IITs to factories — institutions of every size.</h2>
             </div>
             <p className="lg:col-span-5 lg:pt-12 section-sub">
-              IITs, NITs, ICAR labs, farm universities and big company labs — they all
+              IITs, NITs, ICAR institutes, farm universities and company R&D centres — they all
               buy from us.
             </p>
           </div>
@@ -228,7 +228,7 @@ export default function Home() {
               icon={<FlaskConical className="h-6 w-6" />}
               title="ICAR & Universities"
               count="30+"
-              caption="Farm research labs"
+              caption="Farm research institutes"
               clients={["IARI Pusa", "CRIDA", "PAU Ludhiana", "TNAU", "SKUAST"]}
             />
             <Vertical
@@ -277,7 +277,7 @@ export default function Home() {
               icon={<Truck className="h-6 w-6" />}
               num="02"
               title="Deliver and set up"
-              body="We deliver anywhere in India and set the machine up at your lab."
+              body="We deliver anywhere in India and set the machine up at your site."
             />
             <Capability
               icon={<GraduationCap className="h-6 w-6" />}
@@ -305,7 +305,7 @@ export default function Home() {
               <span className="accent-rule" />
               <SectionLabel light className="mb-4">Why pick us</SectionLabel>
               <h2 className="font-display font-bold text-display-lg tracking-tight">
-                Top labs across India <span className="text-accent">already trust us.</span>
+                Top institutions across India <span className="text-accent">already trust us.</span>
               </h2>
             </div>
             <p className="lg:col-span-5 lg:pt-12 text-white/70 leading-relaxed">
@@ -328,10 +328,10 @@ export default function Home() {
                   100<span className="text-accent">+</span>
                 </div>
                 <div className="mt-4 font-display text-xl font-bold text-white">
-                  Labs and companies who buy from us.
+                  Institutions and companies who buy from us.
                 </div>
                 <p className="mt-3 text-white/65 text-sm leading-relaxed max-w-md">
-                  From IIT Roorkee and ICAR labs to big company labs like Adani,
+                  From IIT Roorkee and ICAR institutes to leading companies like Adani,
                   ArcelorMittal and Hindustan Unilever.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-2">
@@ -419,7 +419,7 @@ export default function Home() {
               <Quote className="h-7 w-7 text-accent mx-auto mb-6" strokeWidth={2} />
               <blockquote className="font-display text-xl md:text-2xl lg:text-[1.75rem] text-ink leading-[1.4] font-medium tracking-tight">
                 The KMV team helped us pick the right balances and microscopes, set them up
-                in the lab, and trained our students. Years on, they still pick up the phone.
+                up for us, and trained our students. Years on, they still pick up the phone.
               </blockquote>
 
               <figcaption className="mt-10 inline-flex items-center gap-4">

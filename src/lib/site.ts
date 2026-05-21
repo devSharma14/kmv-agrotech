@@ -1,7 +1,7 @@
 export const site = {
   name: "KMV Agrotech & Engineering Works",
   short: "KMV Agrotech",
-  tagline: "Scientific equipment for schools, colleges, research labs and companies.",
+  tagline: "Scientific equipment for schools, colleges, research institutes and companies.",
   description:
     "We supply microscopes, weighing scales, scientific instruments and biotech machines to institutions all over India. ISO 9001:2015 certified and MSME registered.",
   founded: 2017,

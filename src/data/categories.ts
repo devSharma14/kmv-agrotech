@@ -20,7 +20,7 @@ export const categories: Category[] = [
     description:
       "From simple school microscopes to advanced ones for research and hospitals.",
     icon: "Microscope",
-    applications: ["Schools & colleges", "Research labs", "Hospitals", "Quality control"],
+    applications: ["Schools & colleges", "Research institutes", "Hospitals", "Quality control"],
     color: "#0B3B6F",
   },
   {
@@ -30,9 +30,9 @@ export const categories: Category[] = [
     short: "Balances",
     tagline: "Accurate weight, every time.",
     description:
-      "Scales for tiny lab samples, for food and crops, and for heavy items in factories.",
+      "Scales for tiny samples, for food and crops, and for heavy items in factories.",
     icon: "Scale",
-    applications: ["Lab weighing", "Food & agri", "Industry", "Pharma QC"],
+    applications: ["Weighing", "Food & agri", "Industry", "Pharma QC"],
     color: "#10B981",
   },
   {
@@ -40,9 +40,9 @@ export const categories: Category[] = [
     number: "03",
     name: "Laboratory Instruments",
     short: "Laboratory",
-    tagline: "Daily tools for any lab.",
+    tagline: "Everyday testing instruments.",
     description:
-      "Everyday lab gear — pH meters, ovens, sieves, water testers and more for testing and drying.",
+      "Everyday instruments — pH meters, ovens, sieves, water testers and more for testing and drying.",
     icon: "FlaskConical",
     applications: ["Water testing", "Soil & material", "Heating & drying", "Chemical analysis"],
     color: "#14528E",
@@ -52,9 +52,9 @@ export const categories: Category[] = [
     number: "04",
     name: "Biotech & Life Sciences",
     short: "Biotech",
-    tagline: "Tools for biology labs.",
+    tagline: "Tools for biology research.",
     description:
-      "For germ, plant and cell labs — incubators, autoclaves, centrifuges, PCR machines and more.",
+      "For microbiology, plant and cell research — incubators, autoclaves, centrifuges, PCR machines and more.",
     icon: "Sprout",
     applications: ["Microbiology", "Tissue culture", "Plant research", "Molecular biology"],
     color: "#059669",

@@ -261,7 +261,7 @@ export const hydrologySubCategories: HydroSubCategory[] = [
     slug: "water-quality",
     name: "Water Quality Monitoring Instruments",
     description:
-      "Precise measurement of parameters such as pH, turbidity, dissolved oxygen and conductivity for environmental monitoring, laboratory analysis and industrial compliance.",
+      "Precise measurement of parameters such as pH, turbidity, dissolved oxygen and conductivity for environmental monitoring, analysis and industrial compliance.",
     products: [
       {
         name: "Water Quality Monitoring Systems",
