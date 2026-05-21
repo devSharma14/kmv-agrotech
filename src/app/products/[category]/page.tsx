@@ -11,7 +11,8 @@ import { Reveal } from "@/components/Reveal";
 import { SectionLabel } from "@/components/SectionLabel";
 
 export function generateStaticParams() {
-  return categories.map((c) => ({ category: c.slug }));
+  // hydrology has its own dedicated page at /products/hydrology
+  return categories.filter((c) => c.slug !== "hydrology").map((c) => ({ category: c.slug }));
 }
 
 export async function generateMetadata({

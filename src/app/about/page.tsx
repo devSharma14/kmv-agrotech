@@ -19,7 +19,7 @@ export default function AboutPage() {
       <PageHeader
         eyebrow="About us"
         title="Helping India's labs since 2017."
-        description="We are KMV Agrotech & Engineering Works, based in Roorkee. We sell microscopes, weighing scales, lab tools and biotech machines to schools, colleges, research labs and companies across India."
+        description="We are KMV Agrotech & Engineering Works, based in Roorkee. We supply microscopes, weighing scales, scientific instruments and biotech machines to schools, colleges, research labs and companies across India."
         meta={<Crumbs items={[{ label: "Home", href: "/" }, { label: "About" }]} />}
       />
 
@@ -66,7 +66,7 @@ export default function AboutPage() {
               num="01"
               icon={<Compass className="h-6 w-6" />}
               title="Honest advice"
-              body="We tell you what fits your lab. If a cheaper one works, we say so."
+              body="We recommend what actually fits your needs — not the most expensive option on the shelf."
             />
             <Value
               num="02"

@@ -126,42 +126,53 @@ export default function ProductDetail({ params }: { params: { category: string; 
         </div>
       </section>
 
-      {/* OVERVIEW + SPECS */}
+      {/* OVERVIEW */}
       <section className="py-section bg-white">
         <div className="container-x grid lg:grid-cols-12 gap-12">
-          <div className="lg:col-span-7">
-            <SectionLabel className="mb-4">Overview</SectionLabel>
-            <p className="text-lg text-slate-700 leading-relaxed max-w-prose">
-              {product.description}
-            </p>
+          <div className="lg:col-span-7 space-y-12">
+            {/* Overview */}
+            <div>
+              <SectionLabel className="mb-4">Overview</SectionLabel>
+              <p className="text-lg text-slate-700 leading-relaxed max-w-prose">
+                {product.description}
+              </p>
+            </div>
 
-            {product.features.length > 0 && (
-              <div className="mt-12">
-                <SectionLabel className="mb-4">Key features</SectionLabel>
-                <ul className="grid sm:grid-cols-2 gap-3">
-                  {product.features.map((f) => (
-                    <li key={f} className="flex items-start gap-3 card p-4">
-                      <Check className="h-4 w-4 text-brand shrink-0 mt-0.5" />
-                      <span className="text-sm text-ink leading-relaxed">{f}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-
+            {/* Applications */}
             {product.applications.length > 0 && (
-              <div className="mt-12">
-                <SectionLabel className="mb-4">Applications</SectionLabel>
-                <div className="flex flex-wrap gap-2">
+              <div>
+                <SectionLabel className="mb-4">Where it&apos;s used</SectionLabel>
+                <div className="grid sm:grid-cols-2 gap-3">
                   {product.applications.map((a) => (
-                    <span key={a} className="chip">{a}</span>
+                    <div key={a} className="flex items-center gap-3 card p-4">
+                      <span className="h-2 w-2 rounded-full bg-accent shrink-0" />
+                      <span className="text-sm font-medium text-ink leading-snug">{a}</span>
+                    </div>
                   ))}
                 </div>
               </div>
             )}
+
+            {/* How ordering works */}
+            <div>
+              <SectionLabel className="mb-4">How ordering works</SectionLabel>
+              <ol className="grid sm:grid-cols-3 gap-4">
+                {[
+                  { n: "01", t: "Send your enquiry", d: "Message us on WhatsApp or request a quote with your requirement." },
+                  { n: "02", t: "Get a quote", d: "We reply with price and delivery time within one working day." },
+                  { n: "03", t: "Delivery & setup", d: "We deliver across India, install on site and train your team." },
+                ].map((s) => (
+                  <li key={s.n} className="card p-5">
+                    <div className="font-display text-3xl font-extrabold text-brand/25 leading-none">{s.n}</div>
+                    <div className="mt-3 font-display font-bold text-ink">{s.t}</div>
+                    <p className="mt-1.5 text-sm text-slate-600 leading-relaxed">{s.d}</p>
+                  </li>
+                ))}
+              </ol>
+            </div>
           </div>
 
-          {/* Sidebar — buy / spec / why-buy */}
+          {/* Sidebar — buy / why-buy */}
           <aside className="lg:col-span-5">
             <div className="lg:sticky lg:top-24 space-y-4">
               {/* Buy panel */}
@@ -199,29 +210,10 @@ export default function ProductDetail({ params }: { params: { category: string; 
                     Chat on WhatsApp
                   </a>
                   <Link href="/contact" className="btn-ghost-light w-full justify-center">
-                    Send project brief
+                    Request a quote
                   </Link>
                 </div>
               </div>
-
-              {/* Specs */}
-              {product.specs && product.specs.length > 0 && (
-                <div className="card p-6">
-                  <div className="text-xs uppercase tracking-[0.14em] font-semibold text-accent-dark mb-4">
-                    Specifications
-                  </div>
-                  <dl className="divide-y divide-slate-200">
-                    {product.specs.map((s) => (
-                      <div key={s.label} className="flex items-baseline justify-between gap-4 py-2.5">
-                        <dt className="text-xs text-slate-500 uppercase tracking-wide font-semibold shrink-0">
-                          {s.label}
-                        </dt>
-                        <dd className="font-mono text-sm text-ink text-right">{s.value}</dd>
-                      </div>
-                    ))}
-                  </dl>
-                </div>
-              )}
 
               {/* Why-KMV */}
               <div className="card p-6">

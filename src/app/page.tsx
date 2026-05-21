@@ -58,14 +58,14 @@ export default function Home() {
             <SectionLabel className="mb-4">EST. 2017 · ROORKEE, INDIA</SectionLabel>
 
             <h1 className="font-display font-extrabold text-display-xl text-ink tracking-tight">
-              Lab equipment your <span className="relative inline-block">
+              Scientific equipment your <span className="relative inline-block">
                 <span className="relative z-10 text-brand">team can trust.</span>
                 <span className="absolute inset-x-0 bottom-1 h-2.5 bg-accent/30 -z-0" aria-hidden />
               </span>
             </h1>
 
             <p className="mt-6 text-base md:text-lg text-slate-600 leading-relaxed max-w-xl">
-              We sell microscopes, weighing scales, lab tools and biotech machines.
+              We supply microscopes, weighing scales, scientific instruments and biotech machines.
               Schools, colleges, research labs and companies across India order from us.
             </p>
 
@@ -101,24 +101,24 @@ export default function Home() {
             <div>
               <SectionLabel light className="mb-3">Who buys from us</SectionLabel>
               <h2 className="font-display text-xl md:text-2xl font-bold text-white tracking-tight">
-                Big labs and well-known names — all over India.
+                Trusted by leading institutions across India.
               </h2>
             </div>
             <Link
               href="/clients"
               className="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:text-accent-soft self-start md:self-auto"
             >
-              See full list <ArrowRight className="h-4 w-4" />
+              See all clients <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
-          <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-8 gap-px bg-white/10 border border-white/10 rounded-md overflow-hidden">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             {homeClients.map((c) => (
               <LogoTile
                 key={c.name}
                 name={c.name}
                 src={c.logo}
                 variant="dark"
-                className="h-24"
+                className="h-24 rounded-lg border border-white/10 overflow-hidden"
               />
             ))}
           </div>
@@ -353,7 +353,7 @@ export default function Home() {
               <SupportStat
                 value={`${brands.length}+`}
                 label="Brands we work with"
-                detail="Top names in microscopes, balances and lab gear."
+                detail="Top names in microscopes, balances and scientific instruments."
               />
               <SupportStat
                 value="ISO"

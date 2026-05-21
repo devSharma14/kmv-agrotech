@@ -59,6 +59,18 @@ export const categories: Category[] = [
     applications: ["Microbiology", "Tissue culture", "Plant research", "Molecular biology"],
     color: "#059669",
   },
+  {
+    slug: "hydrology",
+    number: "05",
+    name: "Hydrological Instruments",
+    short: "Hydrology",
+    tagline: "Measure and manage water.",
+    description:
+      "Instruments for water level, flow, groundwater, sediment, water quality and telemetry across rivers, canals and aquifers.",
+    icon: "Waves",
+    applications: ["Flood warning", "Groundwater", "Flow & discharge", "Water quality"],
+    color: "#0891B2",
+  },
 ];
 
 export function getCategory(slug: string) {

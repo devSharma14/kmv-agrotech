@@ -1,14 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
-import type { Category } from "@/data/categories";
+import { categories, type Category } from "@/data/categories";
 
 // Lead image to feature for each category
-const CATEGORY_HERO: Record<string, { src: string; alt: string }> = {
+const CATEGORY_HERO: Record<string, { src: string; alt: string; cover?: boolean }> = {
   microscopes: { src: "/products/microscopes/research.jpg", alt: "Research Microscope" },
   balances: { src: "/products/balances/analytical-balance.jpg", alt: "Analytical Balance" },
   laboratory: { src: "/products/laboratory/spectrophotometers-uv-vis.jpg", alt: "UV-Vis Spectrophotometer" },
   biotech: { src: "/products/biotech/plant-growth-chamber.jpg", alt: "Plant Growth Chamber" },
+  hydrology: { src: "/products/hydrology/_category-hero.jpeg", alt: "Hydrological field monitoring station", cover: true },
 };
 
 export function CategoryCard({ category }: { category: Category }) {
@@ -33,14 +34,14 @@ export function CategoryCard({ category }: { category: Category }) {
             alt={hero.alt}
             fill
             sizes="(min-width:1024px) 33vw, 50vw"
-            className="object-contain p-6 group-hover:scale-[1.05] transition-transform duration-500"
+            className={`group-hover:scale-[1.05] transition-transform duration-500 ${hero.cover ? "object-cover" : "object-contain p-6"}`}
           />
         )}
         {/* category-color accent rail */}
         <div className="absolute top-0 inset-x-0 h-1" style={{ backgroundColor: category.color }} aria-hidden />
         <div className="absolute top-3 left-3 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-sm bg-white border border-slate-200 text-xs font-semibold text-ink shadow-sm">
           <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: category.color }} />
-          {category.number} <span className="text-slate-400">/ 04</span>
+          {category.number} <span className="text-slate-400">/ {String(categories.length).padStart(2, "0")}</span>
         </div>
       </div>
 

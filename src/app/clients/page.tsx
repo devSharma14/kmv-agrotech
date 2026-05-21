@@ -5,7 +5,6 @@ import { PageHeader } from "@/components/PageHeader";
 import { Crumbs } from "@/components/Crumbs";
 import { SectionLabel } from "@/components/SectionLabel";
 import { Reveal } from "@/components/Reveal";
-import { LogoTile } from "@/components/LogoTile";
 import { clientSectors } from "@/data/brands";
 
 export const metadata: Metadata = {
@@ -24,38 +23,6 @@ const sectorStyles = [
   { Icon: Beaker,        color: "#7C3AED", tint: "rgba(124, 58, 237, 0.10)" },
   { Icon: Factory,       color: "#DC2626", tint: "rgba(220, 38, 38, 0.08)" },
   { Icon: HandHeart,     color: "#D97706", tint: "rgba(217, 119, 6, 0.10)" },
-];
-
-// Featured client logos shown in the top wall. Drop matching files into
-// /public/clients/ and the LogoTile will render the image; otherwise it
-// falls back to a styled name tile.
-const featuredClients: { name: string; logo?: string }[] = [
-  { name: "IIT Roorkee", logo: "/clients/iit-roorkee.png" },
-  { name: "IIT Delhi", logo: "/clients/iit-delhi.png" },
-  { name: "IIT BHU", logo: "/clients/iit-bhu.png" },
-  { name: "IIT Patna", logo: "/clients/iit-patna.png" },
-  { name: "IIT Indore", logo: "/clients/iit-indore.png" },
-  { name: "IIT Jammu", logo: "/clients/iit-jammu.png" },
-  { name: "ICAR", logo: "/clients/icar.png" },
-  { name: "IARI Pusa", logo: "/clients/iari.png" },
-  { name: "PAU Ludhiana", logo: "/clients/pau.png" },
-  { name: "TNAU", logo: "/clients/tnau.png" },
-  { name: "SKUAST", logo: "/clients/skuast.png" },
-  { name: "GLA University", logo: "/clients/gla.png" },
-  { name: "Anna University", logo: "/clients/anna.png" },
-  { name: "DU", logo: "/clients/du.png" },
-  { name: "NEHU", logo: "/clients/nehu.png" },
-  { name: "VTU", logo: "/clients/vtu.png" },
-  { name: "FRI", logo: "/clients/fri.png" },
-  { name: "WIHG", logo: "/clients/wihg.png" },
-  { name: "IIRS", logo: "/clients/iirs.png" },
-  { name: "NIH Roorkee", logo: "/clients/nih.png" },
-  { name: "MNIT Jaipur", logo: "/clients/mnit.png" },
-  { name: "NITK", logo: "/clients/nitk.png" },
-  { name: "Adani", logo: "/clients/adani.png" },
-  { name: "HUL", logo: "/clients/hul.png" },
-  { name: "ArcelorMittal", logo: "/clients/arcelormittal.png" },
-  { name: "Hindustan Copper", logo: "/clients/hindustan-copper.png" },
 ];
 
 // States and cities our customers are based in (drawn from the client list).
@@ -87,34 +54,6 @@ export default function ClientsPage() {
             <Stat value={`${clientSectors.length}`} label="Sector groups served" tone="#10B981" />
             <Stat value={`${coverage.length}+`} label="States we ship to" tone="#0891B2" />
             <Stat value={`${new Date().getFullYear() - 2017}+`} label="Years in business" tone="#059669" />
-          </div>
-        </div>
-      </section>
-
-      {/* Featured client logo wall */}
-      <section className="py-section bg-white">
-        <div className="container-x">
-          <div className="grid lg:grid-cols-12 gap-8 mb-10">
-            <div className="lg:col-span-7">
-              <span className="accent-rule" />
-              <SectionLabel className="mb-4">Some of our customers</SectionLabel>
-              <h2 className="section-heading">Names you will know.</h2>
-            </div>
-            <p className="lg:col-span-5 lg:pt-12 section-sub">
-              Top engineering colleges, farm-research labs and big companies — they all
-              order from us.
-            </p>
-          </div>
-          <div className="flex flex-wrap justify-center gap-3 md:gap-4">
-            {featuredClients.map((c) => (
-              <LogoTile
-                key={c.name}
-                name={c.name}
-                src={c.logo}
-                variant="light"
-                className="h-20 w-36 md:h-24 md:w-44 rounded-md border border-slate-200 bg-white shadow-sm hover:shadow-card-hover hover:border-brand/30 hover:-translate-y-0.5 transition-all duration-200"
-              />
-            ))}
           </div>
         </div>
       </section>

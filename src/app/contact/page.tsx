@@ -3,10 +3,8 @@ import { MapPin, Phone, Mail, Clock, ArrowRight, Building2 } from "lucide-react"
 import { PageHeader } from "@/components/PageHeader";
 import { Crumbs } from "@/components/Crumbs";
 import { SectionLabel } from "@/components/SectionLabel";
-import { ContactForm } from "@/components/ContactForm";
 import { WhatsAppGlyph } from "@/components/WhatsAppFAB";
 import { WHATSAPP_DEFAULT } from "@/lib/whatsapp";
-import { categories } from "@/data/categories";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -21,55 +19,52 @@ export default function ContactPage() {
       <PageHeader
         eyebrow="Contact us"
         title="Tell us what you need."
-        description="One product or a full lab — write to us with your list, and we'll send you a quote within a working day."
+        description="One product or a full lab — send us your list by phone, email or WhatsApp, and we'll send you a quote within a working day."
         meta={<Crumbs items={[{ label: "Home", href: "/" }, { label: "Contact" }]} />}
       />
 
       <section className="py-section bg-white">
-        <div className="container-x grid lg:grid-cols-12 gap-10 lg:gap-12">
-          {/* Form */}
-          <div className="lg:col-span-7">
-            <SectionLabel className="mb-4">Send a message</SectionLabel>
-            <h2 className="section-heading mb-3">Tell us what you need.</h2>
-            <p className="text-slate-600 mb-8 max-w-lg">
-              Fields marked with <span className="text-accent font-semibold">*</span> are needed.
-              Your details are safe with us.
+        <div className="container-x">
+          <div className="max-w-2xl mb-10">
+            <span className="accent-rule" />
+            <SectionLabel className="mb-4">Get in touch</SectionLabel>
+            <h2 className="section-heading mb-3">Call, email or message us.</h2>
+            <p className="text-slate-600 max-w-lg">
+              Reach us directly on any of the lines below — we reply to enquiries within a working day.
             </p>
-            <ContactForm
-              categoryOptions={categories.map((c) => ({ value: c.slug, label: c.name }))}
-            />
           </div>
 
-          {/* Sidebar */}
-          <aside className="lg:col-span-5 space-y-5">
+          <div className="grid lg:grid-cols-2 gap-6">
             <div className="card p-7">
               <SectionLabel className="mb-5">Reach us at</SectionLabel>
               <ul className="space-y-5">
-                <li>
-                  <a href={`tel:${site.phoneRaw}`} className="flex gap-4 group">
-                    <div className="h-11 w-11 flex items-center justify-center bg-brand-50 text-brand rounded shrink-0">
-                      <Phone className="h-5 w-5" />
-                    </div>
-                    <div>
-                      <div className="text-xs uppercase tracking-wider font-semibold text-slate-500">Phone</div>
-                      <div className="font-display text-base font-bold text-ink group-hover:text-brand">
-                        {site.phone}
-                      </div>
-                    </div>
-                  </a>
+                <li className="flex gap-4">
+                  <div className="h-11 w-11 flex items-center justify-center bg-brand-50 text-brand rounded shrink-0">
+                    <Phone className="h-5 w-5" />
+                  </div>
+                  <div>
+                    <div className="text-xs uppercase tracking-wider font-semibold text-slate-500">Phone</div>
+                    <a href={`tel:${site.phoneRaw}`} className="font-display text-base font-bold text-ink hover:text-brand block">
+                      {site.phone}
+                    </a>
+                    <a href={`tel:${site.phone2Raw}`} className="font-display text-base font-bold text-ink hover:text-brand block mt-0.5">
+                      {site.phone2}
+                    </a>
+                  </div>
                 </li>
-                <li>
-                  <a href={`mailto:${site.email}`} className="flex gap-4 group">
-                    <div className="h-11 w-11 flex items-center justify-center bg-brand-50 text-brand rounded shrink-0">
-                      <Mail className="h-5 w-5" />
-                    </div>
-                    <div>
-                      <div className="text-xs uppercase tracking-wider font-semibold text-slate-500">Email</div>
-                      <div className="font-display text-base font-bold text-ink group-hover:text-brand break-all">
-                        {site.email}
-                      </div>
-                    </div>
-                  </a>
+                <li className="flex gap-4">
+                  <div className="h-11 w-11 flex items-center justify-center bg-brand-50 text-brand rounded shrink-0">
+                    <Mail className="h-5 w-5" />
+                  </div>
+                  <div>
+                    <div className="text-xs uppercase tracking-wider font-semibold text-slate-500">Email</div>
+                    <a href={`mailto:${site.email}`} className="font-display text-base font-bold text-ink hover:text-brand break-all block">
+                      {site.email}
+                    </a>
+                    <a href={`mailto:${site.email2}`} className="font-display text-base font-bold text-ink hover:text-brand break-all block mt-0.5">
+                      {site.email2}
+                    </a>
+                  </div>
                 </li>
                 <li>
                   <a
@@ -134,9 +129,10 @@ export default function ContactPage() {
                 </a>
               </div>
             </div>
+          </div>
 
-            {/* Map */}
-            <div className="card p-0 overflow-hidden aspect-[4/3] relative">
+          {/* Map */}
+          <div className="card p-0 overflow-hidden h-[360px] md:h-[440px] relative mt-6">
               <iframe
                 title="KMV Agrotech location on Google Maps"
                 src="https://maps.google.com/maps?q=353%2C%20Poorva%20Deen%20Dayal%2C%20Old%20Railway%20Road%2C%20Roorkee%20247667%2C%20Uttarakhand%2C%20India&t=m&z=15&ie=UTF8&iwloc=B&output=embed"
@@ -159,8 +155,7 @@ export default function ContactPage() {
               >
                 Open in Maps ↗
               </a>
-            </div>
-          </aside>
+          </div>
         </div>
       </section>
     </>

@@ -47,14 +47,20 @@ export function Footer() {
                 {site.address.region} {site.address.postal}
               </span>
             </div>
-            <a href={`tel:${site.phoneRaw}`} className="flex gap-3 hover:text-accent-soft transition-colors">
+            <div className="flex gap-3">
               <Phone className="h-4 w-4 text-accent shrink-0 mt-0.5" />
-              <span>{site.phone}</span>
-            </a>
-            <a href={`mailto:${site.email}`} className="flex gap-3 hover:text-accent-soft transition-colors">
+              <span className="flex flex-col">
+                <a href={`tel:${site.phoneRaw}`} className="hover:text-accent-soft transition-colors">{site.phone}</a>
+                <a href={`tel:${site.phone2Raw}`} className="hover:text-accent-soft transition-colors">{site.phone2}</a>
+              </span>
+            </div>
+            <div className="flex gap-3">
               <Mail className="h-4 w-4 text-accent shrink-0 mt-0.5" />
-              <span className="break-all">{site.email}</span>
-            </a>
+              <span className="flex flex-col break-all">
+                <a href={`mailto:${site.email}`} className="hover:text-accent-soft transition-colors">{site.email}</a>
+                <a href={`mailto:${site.email2}`} className="hover:text-accent-soft transition-colors">{site.email2}</a>
+              </span>
+            </div>
             <a
               href={WHATSAPP_DEFAULT}
               target="_blank"
