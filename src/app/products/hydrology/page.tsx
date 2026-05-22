@@ -71,24 +71,6 @@ export default function HydrologyPage() {
         }
       />
 
-      {/* Sub-category quick nav */}
-      <section className="bg-white border-b border-slate-200 sticky top-[88px] z-20">
-        <div className="container-x py-4 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm">
-          <span className="text-xs uppercase tracking-[0.14em] font-semibold text-slate-400">
-            {hydrologySubCategories.length} groups · {productCount} products
-          </span>
-          {hydrologySubCategories.map((s) => (
-            <a
-              key={s.slug}
-              href={`#${s.slug}`}
-              className="font-medium text-slate-600 hover:text-brand transition-colors"
-            >
-              {s.name.replace(" Instruments", "").replace(" Equipment", "").replace(" Systems", "")}
-            </a>
-          ))}
-        </div>
-      </section>
-
       {hydrologySubCategories.map((sub, si) => (
         <section
           key={sub.slug}

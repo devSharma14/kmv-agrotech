@@ -104,6 +104,17 @@ const seeds: Seed[] = [
     applications: ["IMD observations", "Humidity reference", "Agro-met"],
   },
   {
+    slug: "overhead-stirrer",
+    name: "Overhead Stirrer",
+    category: "laboratory",
+    image: "/products/biotech/overhead-stirrers.jpg",
+    summary:
+      "High-torque overhead stirrer for viscous samples and large volume mixing.",
+    description:
+      "Brushless DC motor with torque feedback. Suitable for medium to high viscosity samples and large volumes.",
+    applications: ["Polymer / paint mixing", "Bioreactor prep", "Viscous samples"],
+  },
+  {
     slug: "thermometers",
     name: "Thermometers",
     category: "laboratory",
@@ -128,6 +139,17 @@ const seeds: Seed[] = [
     applications: ["Soil analysis", "Water quality", "Tissue culture media"],
     featured: true,
   },
+  // {
+  //   slug: "overhead-stirrer",
+  //   name: "Overhead Stirrer",
+  //   category: "biotech",
+  //   image: "/products/biotech/overhead-stirrers.jpg",
+  //   summary:
+  //     "High-torque overhead stirrer for viscous samples and large volume mixing.",
+  //   description:
+  //     "Brushless DC motor with torque feedback. Suitable for medium to high viscosity samples and large volumes.",
+  //   applications: ["Polymer / paint mixing", "Bioreactor prep", "Viscous samples"],
+  // },
   {
     slug: "conductivity-tds-meter",
     name: "Conductivity / TDS Meter",
@@ -285,7 +307,7 @@ const seeds: Seed[] = [
   {
     slug: "magnetic-stirrer",
     name: "Magnetic Stirrer",
-    category: "biotech",
+    category: "laboratory",
     image: "/products/biotech/magnetic-stirrer.jpg",
     summary:
       "Variable-speed magnetic stirrer for low-viscosity liquid mixing.",
@@ -315,17 +337,7 @@ const seeds: Seed[] = [
       "Brushless-motor orbital shaker with optional incubation chamber and precise temperature control, with platform options for flasks and microplates.",
     applications: ["Microbial culture", "Cell culture", "Assay incubation"],
   },
-  {
-    slug: "overhead-stirrer",
-    name: "Overhead Stirrer",
-    category: "biotech",
-    image: "/products/biotech/overhead-stirrers.jpg",
-    summary:
-      "High-torque overhead stirrer for viscous samples and large volume mixing.",
-    description:
-      "Brushless DC motor with torque feedback. Suitable for medium to high viscosity samples and large volumes.",
-    applications: ["Polymer / paint mixing", "Bioreactor prep", "Viscous samples"],
-  },
+
   {
     slug: "plant-growth-chamber",
     name: "Plant Growth Chamber",
@@ -632,7 +644,7 @@ const seeds: Seed[] = [
   },
   {
     slug: "microscope",
-    name: "Microscope",
+    name: "Laboratory microscope",
     category: "microscopes",
     image: "/products/microscopes/laboratory.jpg",
     summary: "General-purpose binocular / trinocular biological microscope.",
